@@ -3,7 +3,7 @@ import "../styles/style.css";
 const { img, title, body, beskrivelse } = Astro.props;
 ---
 
-<div class="article-section">
+<div class="article-section2">
   <div class="tekst">
     <h2>{title}</h2>
     <p>{body}</p>
@@ -14,7 +14,7 @@ const { img, title, body, beskrivelse } = Astro.props;
 </div>
 
 <style>
-  .article-section {
+  .article-section2 {
     padding: 120px 30px;
     display: flex;
     flex-direction: column;
@@ -36,20 +36,13 @@ const { img, title, body, beskrivelse } = Astro.props;
   }
 
   @media (min-width: 800px) {
-    .article-section {
+    .article-section2 {
       display: grid;
       grid-template-columns: 1fr 1fr;
       align-items: center;
       text-align: left;
-      gap: 10px;
+      gap: 250px;
       padding: 120px 120px;
-    }
-    .article-section .tekst {
-      order: 2;
-    }
-
-    .article-section .billede {
-      order: 1;
     }
   }
 </style>
